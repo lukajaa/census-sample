@@ -4,6 +4,7 @@
     <q-input v-model="sample_size" label="Sample Size" />
     <q-btn color="white" text-color="black" label="Submit" @click="guess"/>
     <p>Result: {{ result }}</p>
+    <p>Difference: {{ difference }} ({{ percent_difference }}%)</p>
   </div>
 </template>
 
@@ -13,6 +14,8 @@ import {ref} from 'vue';
 const population = ref(100000);
 const sample_size = ref(50000);
 const result = ref(0);
+const difference = ref(0);
+const percent_difference = ref(0);
 
 function getRandomSubarray(arr : Array<number>, size : number) {
     var shuffled = arr.slice(0), i = arr.length, temp, index;
@@ -43,7 +46,9 @@ function guess() {
       r += 1
     }
   });
-  result.value = sample_size.value**2 / r
+  result.value = Math.round(sample_size.value**2 / r)
+  difference.value = Math.abs(population.value - result.value)
+  percent_difference.value = Math.round(result.value - population.value / ((population.value + result.value) / 2) * 100000) / 1000
 }
 
 </script>
