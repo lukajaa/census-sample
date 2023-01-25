@@ -14,7 +14,7 @@
       <p class="text-h4 text-center justify-center q-ma-lg">
         What is the census?
       </p>
-      <p class="text-subtitle1">Established in 1790 and administered every decade, the United States Census attempts to survey the entire population and provide the truest measure of all groups through targeted questions and accumulation of a wide variety of data. While data collection and computation initially began with door-to-door efforts, it has evolved to make use of more complex forms of digital surveying and calculations. </p>
+      <p class="text-subtitle1">Established in 1790 and administered every decade, the United States Census attempts to survey the entire population and provide the truest measure of all groups through targeted questions and an accumulation of a wide variety of data. While data collection and computation initially began with door-to-door efforts, it has evolved to make use of more complex forms of digital surveying and calculations. </p>
       <div class="q-mt-lg shadow-3 q-pa-sm">
         <p class="text-h6 text-center">Get a question from any historical census!</p>
         <p class="text-center text-subtitle1">{{ current_question }}</p>
@@ -47,7 +47,7 @@
       <Transition>
         <div class="q-mt-lg shadow-3" v-if="wrong || right">
           <p v-if="wrong" class="q-pa-md rounded-borders">You're wrong. The United States Census tries to survey an entire population to “provide the truest measure of all minority groups”, while minimizing sampling errors. However, these ideals fall short. First of all, the census requires a monstrous budget to execute, and it is difficult to administer to all members of the United States. Non-response bias, or a bias that occurs where people who don’t respond to surveys are not counted, accounts for a huge disparity in the enumeration of minority groups and children in particular. For example, the National Academy of Sciences examined data and found a “probable undercount of 1.8% of the general population” (Lerner, Science Clarified).</p>
-          <p v-if="right" class="q-pa-md rounded-borders">You're wrong, but a lot of people think you should be right. The Census can't find the whole population anyway because there will always be people who don't respond, so some people suggest we make it a sample instead. Sampling is both cost-efficient and easier to execute because it uses small sample sizes and statistics to evaluate the size and makeup of a population. Through reliable mathematical formulas based on birth, death, emigration, and immigration records it can count marginalized groups and minorities with accuracy. Also, the errors produced from statistics-based sampling are not based on race, difficulty of acess to certain groups, and are altogether easier to identify, quantify, and rectify.</p>
+          <p v-if="right" class="q-pa-md rounded-borders">You're wrong, but a lot of people think you should be right. The Census can't find the whole population anyway because there will always be people who don't respond, so some people suggest we make it a sample instead. Sampling is both cost-efficient and easier to execute because it uses small sample sizes and statistics to evaluate the size and makeup of a population. Through reliable mathematical formulas based on birth, death, emigration, and immigration records it can count marginalized groups and minorities with accuracy. Also, the errors produced from statistics-based sampling are not based on race, difficulty of access to certain groups, and are altogether easier to identify, quantify, and rectify.</p>
         </div>
       </Transition>
     </div>
@@ -97,7 +97,7 @@
         >
           <q-card>
             <q-card-section>
-              The Lincoln Index is a popular method for counting the population of fish, the Lincoln Index is used by taking a sample of a population, then taking a second sample and marking the overlap between the two.
+              The Lincoln Index is a popular method for counting populations using sampling. Ecologists first executed the idea by capturing sample of fish, marking them, and after releasing them again, taking a new sample. The ecologists then would note the amount of previously-marked fish in the second sample. By counting the overlap between the two samples, you can make estimates towards the size of the whole population.
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -108,7 +108,7 @@
         >
           <q-card>
             <q-card-section>
-              Where E1 = number of people in the first sample, E2 = number of people in the second sample, S = number of overlapping people, and L  = total population, the Lincoln Index say   L = (E1*E2)/S
+              Where E1 = number of people in the first sample, E2 = number of people in the second sample, S = number of overlapping people, and L  = total population, the Lincoln Index says L = (E1*E2)/S
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -128,7 +128,7 @@
     </div>
     <div class="q-ma-lg q-pa-xl q-mt-none shadow-7 bg-white rounded-borders">
       <h4 class="text-center">Why does this even matter?</h4>
-      <p class="text-subtitle1">Firstly, the Census forms the foundation of congressional districts in the U.S., which influences how votes are apportioned and delegates are selected. If there is an under-assessment of minorities, for example, this poses both the problem of unequal representation and insufficient amounts of government aid (for the clinically disabled, etc.). Finally, a huge fiscal problem would be solved should the Census be reformed: it is estimated that approximately $100 million could be saved, “assuming an overall sampling rate of 75 percent" (Lerner, Science Clarified).</p>
+      <p class="text-subtitle1">Firstly, the Census forms the foundation of congressional districts in the U.S., which influences how votes are apportioned and delegates are selected. If there is an under-assessment of minorities, for example, this poses both a couple of problems: unequal representation and insufficient amounts of government aid. Finally, a huge fiscal problem would be solved should the Census be reformed: it is estimated that approximately $100 million could be saved, “assuming an overall sampling rate of 75 percent" (Lerner, Science Clarified).</p>
     </div>
     <div class="text-center q-pa-md bg-white shadow-up-3">
       <p class="q-mb-none">Made with Vue3 and Quasar</p>
